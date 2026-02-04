@@ -1,0 +1,682 @@
+{
+  "version": "2.6",
+  "children": [
+    {
+      "type": "frame",
+      "id": "Hd92v",
+      "x": -573,
+      "y": -34,
+      "name": "Login Page",
+      "clip": true,
+      "width": 402,
+      "height": 844,
+      "fill": "#F5F9F8",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "8zn2g",
+          "name": "Content",
+          "width": "fill_container",
+          "fill": "transparent",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            80,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "HONGc",
+              "name": "Logo Section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "4ROZZ",
+                  "name": "logo1",
+                  "width": 80,
+                  "height": 80,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1770188157597.png",
+                    "mode": "fill"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "zLws2",
+                  "fill": "#1A1A1A",
+                  "content": "Non-JUPAS",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 32,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "BYD0k",
+                  "fill": "#888888",
+                  "content": "Admission System",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "0hgBe",
+              "name": "Login Card",
+              "width": "fill_container",
+              "fill": "#FEFEFE",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EIxx1",
+                  "fill": "#888888",
+                  "content": "SCHOOL EMAIL",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 10,
+                  "fontWeight": "700",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "fugTK",
+                  "name": "emailField",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "#F8FFFE",
+                  "cornerRadius": 12,
+                  "gap": 12,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9rS99",
+                      "content": "✉️",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "6o6fq",
+                      "fill": "#999999",
+                      "content": "Enter your school email",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Esx9Z",
+                  "fill": "#888888",
+                  "content": "PASSWORD",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 10,
+                  "fontWeight": "700",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "8m0Hq",
+                  "name": "passField",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "#F8FFFE",
+                  "cornerRadius": 12,
+                  "gap": 12,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "E6YeB",
+                      "name": "passLeft",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "njing",
+                          "content": "🔒",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "jBgQG",
+                          "fill": "#AAAAAA",
+                          "content": "Enter your password",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "rokNf",
+                      "fill": "#888888",
+                      "content": "👁",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Yyzpe",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "#0C7570",
+                  "cornerRadius": 10,
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9LIZx",
+                      "fill": "#FFFFFF",
+                      "content": "Login",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "9xFJ0",
+              "name": "linksFrame",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5QDRn",
+                  "fill": "#0D6E6E",
+                  "content": "New user? Register here",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ntv1Q",
+                  "fill": "#0D6E6E",
+                  "content": "Forgot Password?",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "JfL3C",
+      "x": -171,
+      "y": 1068,
+      "name": "iPad (768x1024) - Default",
+      "width": 768,
+      "height": 1024,
+      "fill": "#F5F9F8",
+      "layout": "vertical",
+      "gap": 40,
+      "padding": 60,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "QF1X0",
+          "name": "logo_ipad",
+          "width": 120,
+          "height": 120,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1770188157597.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "text",
+          "id": "yUZS3",
+          "fill": "#1A1A1A",
+          "content": "Non-JUPAS",
+          "textAlign": "center",
+          "fontFamily": "Newsreader",
+          "fontSize": 44,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "xicQy",
+          "fill": "#1A1A1A",
+          "content": "Sign In",
+          "fontFamily": "Newsreader",
+          "fontSize": 28,
+          "fontWeight": "700"
+        },
+        {
+          "type": "frame",
+          "id": "ZhaG9",
+          "name": "form_ipad",
+          "width": 500,
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "iQNew",
+              "fill": "#888888",
+              "content": "SCHOOL EMAIL",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "Wh6J6",
+              "name": "email_ipad",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#F8FFFE",
+              "cornerRadius": 12,
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "c2ISM",
+                  "content": "✉️",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "c8nQt",
+                  "fill": "#AAAAAA",
+                  "content": "Enter your school email",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "mgX26",
+              "fill": "#888888",
+              "content": "PASSWORD",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "Qa7L7",
+              "name": "pass_ipad",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#F8FFFE",
+              "cornerRadius": 12,
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mLfpW",
+                  "name": "pass_left_ipad",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8KwTZ",
+                      "content": "🔒",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ATLJO",
+                      "fill": "#AAAAAA",
+                      "content": "Enter your password",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "SlLy6",
+                  "fill": "#888888",
+                  "content": "👁",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "EQ2Y1",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0D6E6E",
+              "cornerRadius": 10,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZkaXM",
+                  "fill": "#FFFFFF",
+                  "content": "Sign In",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wYgpo",
+          "name": "links_ipad",
+          "width": 500,
+          "layout": "vertical",
+          "gap": 14,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "89s09",
+              "fill": "#0D6E6E",
+              "content": "New user? Register here",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "ghgUg",
+              "fill": "#0D6E6E",
+              "content": "Forgot Password?",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ls2UB",
+      "x": 647,
+      "y": 1068,
+      "name": "Laptop (1280x800) - Default",
+      "width": 768,
+      "height": 1024,
+      "fill": "#F5F9F8",
+      "layout": "vertical",
+      "gap": 40,
+      "padding": 60,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "wgSzo",
+          "name": "logo_ipad",
+          "width": 120,
+          "height": 120,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1770188157597.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "text",
+          "id": "jSQCF",
+          "fill": "#1A1A1A",
+          "content": "Non-JUPAS",
+          "textAlign": "center",
+          "fontFamily": "Newsreader",
+          "fontSize": 44,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "NJk55",
+          "fill": "#1A1A1A",
+          "content": "Sign In",
+          "fontFamily": "Newsreader",
+          "fontSize": 28,
+          "fontWeight": "700"
+        },
+        {
+          "type": "frame",
+          "id": "qZTjy",
+          "name": "form_ipad",
+          "width": 500,
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "ZtDF3",
+              "fill": "#888888",
+              "content": "SCHOOL EMAIL",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "1kQxn",
+              "name": "email_ipad",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#F8FFFE",
+              "cornerRadius": 12,
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZBvzY",
+                  "content": "✉️",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "PPkKi",
+                  "fill": "#AAAAAA",
+                  "content": "Enter your school email",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "JF9HX",
+              "fill": "#888888",
+              "content": "PASSWORD",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "mDePI",
+              "name": "pass_ipad",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#F8FFFE",
+              "cornerRadius": 12,
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WXQFT",
+                  "name": "pass_left_ipad",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bOkqQ",
+                      "content": "🔒",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "4rbtB",
+                      "fill": "#AAAAAA",
+                      "content": "Enter your password",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "1LFNG",
+                  "fill": "#888888",
+                  "content": "👁",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mnoC0",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0D6E6E",
+              "cornerRadius": 10,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "op3E3",
+                  "fill": "#FFFFFF",
+                  "content": "Sign In",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "5cjFl",
+          "name": "links_ipad",
+          "width": 500,
+          "layout": "vertical",
+          "gap": 14,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "VsWJw",
+              "fill": "#0D6E6E",
+              "content": "New user? Register here",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Ip35m",
+              "fill": "#0D6E6E",
+              "content": "Forgot Password?",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
