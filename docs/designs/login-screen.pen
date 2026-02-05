@@ -6,11 +6,11 @@
       "id": "Hd92v",
       "x": -573,
       "y": -34,
-      "name": "Login Page",
+      "name": "Responsive Login",
       "clip": true,
-      "width": 402,
-      "height": 844,
-      "fill": "#F5F9F8",
+      "width": 375,
+      "height": 812,
+      "fill": "#F0F2F5",
       "layout": "vertical",
       "children": [
         {
@@ -22,10 +22,8 @@
           "layout": "vertical",
           "gap": 32,
           "padding": [
-            80,
             24,
-            24,
-            24
+            16
           ],
           "children": [
             {
@@ -56,7 +54,7 @@
                   "fill": "#1A1A1A",
                   "content": "Non-JUPAS",
                   "fontFamily": "Newsreader",
-                  "fontSize": 32,
+                  "fontSize": 28,
                   "fontWeight": "700"
                 },
                 {
@@ -65,7 +63,7 @@
                   "fill": "#666666",
                   "content": "Welcome back! Please enter your details.",
                   "fontFamily": "Inter",
-                  "fontSize": 13,
+                  "fontSize": 12,
                   "fontWeight": "normal"
                 }
               ]
@@ -78,8 +76,8 @@
               "fill": "#FEFEFE",
               "cornerRadius": 16,
               "layout": "vertical",
-              "gap": 24,
-              "padding": 32,
+              "gap": 20,
+              "padding": 20,
               "children": [
                 {
                   "type": "text",
@@ -87,7 +85,7 @@
                   "fill": "#888888",
                   "content": "SCHOOL EMAIL",
                   "fontFamily": "JetBrains Mono",
-                  "fontSize": 10,
+                  "fontSize": 11,
                   "fontWeight": "700",
                   "letterSpacing": 3
                 },
@@ -96,7 +94,7 @@
                   "id": "fugTK",
                   "name": "emailField",
                   "width": "fill_container",
-                  "height": 48,
+                  "height": 40,
                   "fill": "#F8FFFE",
                   "cornerRadius": 12,
                   "gap": 12,
@@ -131,7 +129,7 @@
                   "fill": "#888888",
                   "content": "PASSWORD",
                   "fontFamily": "JetBrains Mono",
-                  "fontSize": 10,
+                  "fontSize": 11,
                   "fontWeight": "700",
                   "letterSpacing": 3
                 },
@@ -140,7 +138,7 @@
                   "id": "8m0Hq",
                   "name": "passField",
                   "width": "fill_container",
-                  "height": 48,
+                  "height": 40,
                   "fill": "#F8FFFE",
                   "cornerRadius": 12,
                   "gap": 12,
@@ -194,6 +192,7 @@
                   "id": "sBrn6",
                   "name": "rem_mobile",
                   "width": "fill_container",
+                  "gap": 12,
                   "justifyContent": "space_between",
                   "alignItems": "center",
                   "children": [
@@ -219,7 +218,7 @@
                           "fill": "#666666",
                           "content": "Remember me",
                           "fontFamily": "Inter",
-                          "fontSize": 12,
+                          "fontSize": 11,
                           "fontWeight": "normal"
                         }
                       ]
@@ -230,7 +229,7 @@
                       "fill": "#0D6E6E",
                       "content": "Forgot Password?",
                       "fontFamily": "Inter",
-                      "fontSize": 12,
+                      "fontSize": 11,
                       "fontWeight": "600"
                     }
                   ]
@@ -239,8 +238,8 @@
                   "type": "frame",
                   "id": "Yyzpe",
                   "width": "fill_container",
-                  "height": 48,
-                  "fill": "#0C7570",
+                  "height": 40,
+                  "fill": "#0D6E6E",
                   "cornerRadius": 10,
                   "gap": 8,
                   "justifyContent": "center",
@@ -265,7 +264,7 @@
               "name": "linksFrame",
               "width": "fill_container",
               "layout": "vertical",
-              "gap": 12,
+              "gap": 16,
               "alignItems": "center",
               "children": [
                 {
@@ -287,556 +286,6 @@
                   "fontWeight": "Normal"
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "JfL3C",
-      "x": -171,
-      "y": 1068,
-      "name": "iPad (768x1024) - Default",
-      "width": 768,
-      "height": 1024,
-      "fill": "#F5F9F8",
-      "layout": "vertical",
-      "gap": 40,
-      "padding": 60,
-      "alignItems": "center",
-      "children": [
-        {
-          "type": "frame",
-          "id": "QF1X0",
-          "name": "logo_ipad",
-          "width": 120,
-          "height": 120,
-          "fill": {
-            "type": "image",
-            "enabled": true,
-            "url": "./images/generated-1770188157597.png",
-            "mode": "fill"
-          }
-        },
-        {
-          "type": "text",
-          "id": "yUZS3",
-          "fill": "#1A1A1A",
-          "content": "Non-JUPAS",
-          "textAlign": "center",
-          "fontFamily": "Newsreader",
-          "fontSize": 44,
-          "fontWeight": "700"
-        },
-        {
-          "type": "text",
-          "id": "xicQy",
-          "fill": "#1A1A1A",
-          "content": "Sign In",
-          "fontFamily": "Newsreader",
-          "fontSize": 28,
-          "fontWeight": "700"
-        },
-        {
-          "type": "text",
-          "id": "4w7qP",
-          "name": "subtitle_ipad",
-          "fill": "#666666",
-          "content": "Welcome back! Please enter your details.",
-          "fontFamily": "Inter",
-          "fontSize": 16,
-          "fontWeight": "normal"
-        },
-        {
-          "type": "frame",
-          "id": "ZhaG9",
-          "name": "form_ipad",
-          "width": 500,
-          "fill": "#FEFEFE",
-          "cornerRadius": 16,
-          "layout": "vertical",
-          "gap": 24,
-          "padding": 32,
-          "children": [
-            {
-              "type": "text",
-              "id": "iQNew",
-              "fill": "#888888",
-              "content": "SCHOOL EMAIL",
-              "fontFamily": "JetBrains Mono",
-              "fontSize": 11,
-              "fontWeight": "700",
-              "letterSpacing": 3
-            },
-            {
-              "type": "frame",
-              "id": "Wh6J6",
-              "name": "email_ipad",
-              "width": "fill_container",
-              "height": 48,
-              "fill": "#F8FFFE",
-              "cornerRadius": 12,
-              "gap": 12,
-              "padding": [
-                0,
-                16
-              ],
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "c2ISM",
-                  "content": "✉️",
-                  "fontFamily": "Inter",
-                  "fontSize": 18,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "c8nQt",
-                  "fill": "#AAAAAA",
-                  "content": "Enter your school email",
-                  "fontFamily": "Inter",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "mgX26",
-              "fill": "#888888",
-              "content": "PASSWORD",
-              "fontFamily": "JetBrains Mono",
-              "fontSize": 11,
-              "fontWeight": "700",
-              "letterSpacing": 3
-            },
-            {
-              "type": "frame",
-              "id": "Qa7L7",
-              "name": "pass_ipad",
-              "width": "fill_container",
-              "height": 48,
-              "fill": "#F8FFFE",
-              "cornerRadius": 12,
-              "gap": 12,
-              "padding": [
-                0,
-                16
-              ],
-              "justifyContent": "space_between",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "mLfpW",
-                  "name": "pass_left_ipad",
-                  "width": "fill_container",
-                  "gap": 12,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "8KwTZ",
-                      "content": "🔒",
-                      "fontFamily": "Inter",
-                      "fontSize": 18,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "ATLJO",
-                      "fill": "#AAAAAA",
-                      "content": "Enter your password",
-                      "fontFamily": "Inter",
-                      "fontSize": 13,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "id": "SlLy6",
-                  "fill": "#888888",
-                  "content": "👁",
-                  "fontFamily": "Inter",
-                  "fontSize": 16,
-                  "fontWeight": "normal"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "5Lxsa",
-              "name": "rem_ipad",
-              "width": "fill_container",
-              "justifyContent": "space_between",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "cRS7X",
-                  "gap": 8,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "Fwme9",
-                      "width": 18,
-                      "height": 18,
-                      "fill": "#F0F8F7",
-                      "cornerRadius": 4,
-                      "justifyContent": "center",
-                      "alignItems": "center"
-                    },
-                    {
-                      "type": "text",
-                      "id": "G694c",
-                      "fill": "#666666",
-                      "content": "Remember me",
-                      "fontFamily": "Inter",
-                      "fontSize": 13,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "id": "LYukp",
-                  "fill": "#0D6E6E",
-                  "content": "Forgot Password?",
-                  "fontFamily": "Inter",
-                  "fontSize": 13,
-                  "fontWeight": "600"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "EQ2Y1",
-              "width": "fill_container",
-              "height": 48,
-              "fill": "#0D6E6E",
-              "cornerRadius": 10,
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "ZkaXM",
-                  "fill": "#FFFFFF",
-                  "content": "Sign In",
-                  "fontFamily": "Inter",
-                  "fontSize": 15,
-                  "fontWeight": "600"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "wYgpo",
-          "name": "links_ipad",
-          "width": 500,
-          "layout": "vertical",
-          "gap": 14,
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "ghgUg",
-              "fill": "#0D6E6E",
-              "content": "Forgot Password?",
-              "fontFamily": "Inter",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "text",
-              "id": "Le0dg",
-              "fill": "#0D6E6E",
-              "content": "New user? Register here",
-              "fontFamily": "Inter",
-              "fontSize": 14,
-              "fontWeight": "Normal"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "ls2UB",
-      "x": 647,
-      "y": 1068,
-      "name": "Laptop (1280x800) - Default",
-      "width": 768,
-      "height": 1024,
-      "fill": "#F5F9F8",
-      "layout": "vertical",
-      "gap": 40,
-      "padding": 60,
-      "alignItems": "center",
-      "children": [
-        {
-          "type": "frame",
-          "id": "wgSzo",
-          "name": "logo_ipad",
-          "width": 120,
-          "height": 120,
-          "fill": {
-            "type": "image",
-            "enabled": true,
-            "url": "./images/generated-1770188157597.png",
-            "mode": "fill"
-          }
-        },
-        {
-          "type": "text",
-          "id": "jSQCF",
-          "fill": "#1A1A1A",
-          "content": "Non-JUPAS",
-          "textAlign": "center",
-          "fontFamily": "Newsreader",
-          "fontSize": 44,
-          "fontWeight": "700"
-        },
-        {
-          "type": "text",
-          "id": "NJk55",
-          "fill": "#1A1A1A",
-          "content": "Sign In",
-          "fontFamily": "Newsreader",
-          "fontSize": 28,
-          "fontWeight": "700"
-        },
-        {
-          "type": "text",
-          "id": "ePXcc",
-          "name": "subtitle_laptop",
-          "fill": "#666666",
-          "content": "Welcome back! Please enter your details.",
-          "fontFamily": "Inter",
-          "fontSize": 16,
-          "fontWeight": "normal"
-        },
-        {
-          "type": "frame",
-          "id": "qZTjy",
-          "name": "form_ipad",
-          "width": 500,
-          "fill": "#FEFEFE",
-          "cornerRadius": 16,
-          "layout": "vertical",
-          "gap": 24,
-          "padding": 32,
-          "children": [
-            {
-              "type": "text",
-              "id": "ZtDF3",
-              "fill": "#888888",
-              "content": "SCHOOL EMAIL",
-              "fontFamily": "JetBrains Mono",
-              "fontSize": 11,
-              "fontWeight": "700",
-              "letterSpacing": 3
-            },
-            {
-              "type": "frame",
-              "id": "1kQxn",
-              "name": "email_ipad",
-              "width": "fill_container",
-              "height": 48,
-              "fill": "#F8FFFE",
-              "cornerRadius": 12,
-              "gap": 12,
-              "padding": [
-                0,
-                16
-              ],
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "ZBvzY",
-                  "content": "✉️",
-                  "fontFamily": "Inter",
-                  "fontSize": 18,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "PPkKi",
-                  "fill": "#AAAAAA",
-                  "content": "Enter your school email",
-                  "fontFamily": "Inter",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "JF9HX",
-              "fill": "#888888",
-              "content": "PASSWORD",
-              "fontFamily": "JetBrains Mono",
-              "fontSize": 11,
-              "fontWeight": "700",
-              "letterSpacing": 3
-            },
-            {
-              "type": "frame",
-              "id": "mDePI",
-              "name": "pass_ipad",
-              "width": "fill_container",
-              "height": 48,
-              "fill": "#F8FFFE",
-              "cornerRadius": 12,
-              "gap": 12,
-              "padding": [
-                0,
-                16
-              ],
-              "justifyContent": "space_between",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "WXQFT",
-                  "name": "pass_left_ipad",
-                  "width": "fill_container",
-                  "gap": 12,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "bOkqQ",
-                      "content": "🔒",
-                      "fontFamily": "Inter",
-                      "fontSize": 18,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "4rbtB",
-                      "fill": "#AAAAAA",
-                      "content": "Enter your password",
-                      "fontFamily": "Inter",
-                      "fontSize": 13,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "id": "1LFNG",
-                  "fill": "#888888",
-                  "content": "👁",
-                  "fontFamily": "Inter",
-                  "fontSize": 16,
-                  "fontWeight": "normal"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "p9eLG",
-              "name": "rem_laptop",
-              "width": "fill_container",
-              "justifyContent": "space_between",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "K5E4T",
-                  "gap": 8,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "OeAyL",
-                      "width": 18,
-                      "height": 18,
-                      "fill": "#F0F8F7",
-                      "cornerRadius": 4,
-                      "justifyContent": "center",
-                      "alignItems": "center"
-                    },
-                    {
-                      "type": "text",
-                      "id": "9TIna",
-                      "fill": "#666666",
-                      "content": "Remember me",
-                      "fontFamily": "Inter",
-                      "fontSize": 13,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "id": "Rgu0r",
-                  "fill": "#0D6E6E",
-                  "content": "Forgot Password?",
-                  "fontFamily": "Inter",
-                  "fontSize": 13,
-                  "fontWeight": "600"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "mnoC0",
-              "width": "fill_container",
-              "height": 48,
-              "fill": "#0D6E6E",
-              "cornerRadius": 10,
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "op3E3",
-                  "fill": "#FFFFFF",
-                  "content": "Sign In",
-                  "fontFamily": "Inter",
-                  "fontSize": 15,
-                  "fontWeight": "600"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "5cjFl",
-          "name": "links_ipad",
-          "width": 500,
-          "layout": "vertical",
-          "gap": 14,
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "Ip35m",
-              "fill": "#0D6E6E",
-              "content": "Forgot Password?",
-              "fontFamily": "Inter",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "text",
-              "id": "ytqCJ",
-              "fill": "#0D6E6E",
-              "content": "New user? Register here",
-              "fontFamily": "Inter",
-              "fontSize": 14,
-              "fontWeight": "Normal"
             }
           ]
         }
