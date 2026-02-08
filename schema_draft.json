@@ -1,0 +1,27 @@
+{
+  "personal_info": {
+    "name": "String",
+    "email": "String",
+    "is_local": "Boolean", 
+    "entry_year": "Number" 
+  },
+  "academic_records": {
+    "institution": "String",
+    "raw_gpa": "Number",
+    "gpa_scale": "Number",
+    "normalized_gpa": "Number" 
+  },
+  "documents": [
+    { "type": "String", "url": "String" }
+  ],
+  "interview_evaluation": {
+    "score": "Number",
+    "comments": "String",
+    "interviewer_id": "String"
+  },
+  "additional_info": { 
+    "talents": [], 
+    "other_details": {} 
+  },
+  "status": "String" 
+}
