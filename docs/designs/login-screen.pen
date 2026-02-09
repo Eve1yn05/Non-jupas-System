@@ -1,5 +1,5 @@
 {
-  "version": "2.6",
+  "version": "2.7",
   "children": [
     {
       "type": "frame",
@@ -76,14 +76,14 @@
               "fill": "#FEFEFE",
               "cornerRadius": 16,
               "layout": "vertical",
-              "gap": 20,
+              "gap": 24,
               "padding": 20,
               "children": [
                 {
                   "type": "text",
                   "id": "EIxx1",
                   "fill": "#888888",
-                  "content": "SCHOOL EMAIL",
+                  "content": "EMAIL",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 11,
                   "fontWeight": "700",
@@ -116,7 +116,7 @@
                       "type": "text",
                       "id": "6o6fq",
                       "fill": "#999999",
-                      "content": "Enter your school email",
+                      "content": "Enter your email",
                       "fontFamily": "Inter",
                       "fontSize": 14,
                       "fontWeight": "normal"
@@ -267,15 +267,6 @@
               "gap": 16,
               "alignItems": "center",
               "children": [
-                {
-                  "type": "text",
-                  "id": "ntv1Q",
-                  "fill": "#0D6E6E",
-                  "content": "Forgot Password?",
-                  "fontFamily": "Inter",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
                 {
                   "type": "text",
                   "id": "cThCO",

@@ -1,5 +1,5 @@
 {
-  "version": "2.6",
+  "version": "2.7",
   "children": [
     {
       "type": "frame",
@@ -53,7 +53,7 @@
           "id": "ZHjY2",
           "name": "mobileContent",
           "width": "fill_container",
-          "height": "fill_container",
+          "height": 419,
           "layout": "vertical",
           "gap": 16,
           "padding": 12,
@@ -66,9 +66,64 @@
               "fill": "#FFFFFF",
               "cornerRadius": 12,
               "layout": "vertical",
-              "gap": 10,
+              "gap": 16,
               "padding": 12,
               "children": [
+                {
+                  "type": "frame",
+                  "id": "u84PQ",
+                  "name": "field4",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ACjrh",
+                      "fill": "#1A1A1A",
+                      "content": "E-mail",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bvvdY",
+                      "fill": "#666666",
+                      "content": "We will communicate with you regarding your\nadmission application via this email address.",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Inter",
+                      "fontSize": 8,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "6PlBH",
+                      "name": "input4",
+                      "width": "fill_container",
+                      "height": 40,
+                      "fill": "#F5F9F8",
+                      "cornerRadius": 8,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OvCG6",
+                          "fill": "#999999",
+                          "content": "Enter email address",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "frame",
                   "id": "lixJs",
@@ -203,61 +258,6 @@
                 },
                 {
                   "type": "frame",
-                  "id": "u84PQ",
-                  "name": "field4",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 6,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "ACjrh",
-                      "fill": "#1A1A1A",
-                      "content": "E-mail",
-                      "fontFamily": "Inter",
-                      "fontSize": 12,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "text",
-                      "id": "bvvdY",
-                      "fill": "#666666",
-                      "content": "We will communicate with you regarding your\nadmission application via this email address.",
-                      "lineHeight": 1.3,
-                      "fontFamily": "Inter",
-                      "fontSize": 8,
-                      "fontWeight": "normal",
-                      "fontStyle": "italic"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "6PlBH",
-                      "name": "input4",
-                      "width": "fill_container",
-                      "height": 40,
-                      "fill": "#F5F9F8",
-                      "cornerRadius": 8,
-                      "padding": [
-                        0,
-                        12
-                      ],
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "OvCG6",
-                          "fill": "#999999",
-                          "content": "Enter email address",
-                          "fontFamily": "Inter",
-                          "fontSize": 13,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
                   "id": "rIY8l",
                   "name": "checkboxSection",
                   "width": "fill_container",
@@ -269,14 +269,13 @@
                       "name": "checkbox",
                       "width": 18,
                       "height": 18,
-                      "fill": "#0D6E6E",
+                      "fill": "#F5F5F5",
                       "cornerRadius": 4,
                       "children": [
                         {
                           "type": "text",
                           "id": "CVIhO",
                           "fill": "#FFFFFF",
-                          "content": "✓",
                           "fontFamily": "Inter",
                           "fontSize": 12,
                           "fontWeight": "700"
