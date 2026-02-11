@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Non-JUPAS Login</title>
+    <title>Non-JUPAS Register</title>
     <style>
         * {
             margin: 0;
@@ -24,7 +24,7 @@
             padding: 16px;
         }
 
-        .login-container {
+        .signup-container {
             width: 100%;
             max-width: 480px;
             background-color: rgba(240, 242, 245, 0.95);
@@ -79,7 +79,7 @@
             line-height: 1.5;
         }
 
-        .login-card {
+        .signup-card {
             background-color: #FFFFFF;
             border-radius: 20px;
             padding: 48px;
@@ -123,7 +123,8 @@
             box-shadow: 0 0 0 3px rgba(13, 110, 110, 0.1);
         }
 
-        .form-input-wrapper input {
+        .form-input-wrapper input,
+        .form-input-wrapper select {
             flex: 1;
             border: none;
             background: none;
@@ -134,14 +135,12 @@
             font-weight: 500;
         }
 
-        .form-input-wrapper input::placeholder {
-            color: #999999;
+        .form-input-wrapper select {
+            cursor: pointer;
         }
 
-        .form-input-icon {
-            font-size: 18px;
-            color: #0D6E6E;
-            flex-shrink: 0;
+        .form-input-wrapper input::placeholder {
+            color: #999999;
         }
 
         .eye-icon {
@@ -177,21 +176,13 @@
             opacity: 0.7;
         }
 
-        .remember-section {
+        .checkbox-section {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-            margin-top: 24px;
+            align-items: flex-start;
+            gap: 12px;
+            margin-top: 16px;
             padding-top: 16px;
             border-top: 1px solid #F0F0F0;
-        }
-
-        .remember-left {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            cursor: pointer;
         }
 
         .checkbox-container {
@@ -199,6 +190,7 @@
             width: 18px;
             height: 18px;
             flex-shrink: 0;
+            margin-top: 2px;
         }
 
         .checkbox-container input {
@@ -243,27 +235,14 @@
             opacity: 1;
         }
 
-        .remember-text {
-            font-size: 14px;
-            color: #333333;
-            font-weight: 500;
+        .checkbox-text {
+            font-size: 13px;
+            color: #666666;
+            font-weight: normal;
+            line-height: 1.4;
         }
 
-        .forgot-password {
-            font-size: 14px;
-            color: #0D6E6E;
-            text-decoration: none;
-            cursor: pointer;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .forgot-password:hover {
-            opacity: 0.7;
-            text-decoration: underline;
-        }
-
-        .login-button {
+        .signup-button {
             background-color: #0D6E6E;
             color: #FFFFFF;
             border: none;
@@ -278,17 +257,17 @@
             margin-top: 24px;
         }
 
-        .login-button:hover:not(:disabled) {
+        .signup-button:hover:not(:disabled) {
             background-color: #095555;
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(13, 110, 110, 0.35);
         }
 
-        .login-button:active:not(:disabled) {
+        .signup-button:active:not(:disabled) {
             transform: translateY(0);
         }
 
-        .login-button:disabled {
+        .signup-button:disabled {
             background-color: #CCCCCC;
             cursor: not-allowed;
         }
@@ -380,7 +359,7 @@
     </style>
 </head>
 <body>
-    <div class="login-container">
+    <div class="signup-container">
         <div class="content">
             <!-- Logo Section -->
             <div class="logo-section">
@@ -388,14 +367,14 @@
                     <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Hong_Kong_Baptist_University_logo.svg" alt="Non-JUPAS Logo">
                 </div>
                 <div class="app-title">Non-Jupas System</div>
-                <div class="welcome-text">Welcome back! Please enter your details.</div>
+                <div class="welcome-text">Create your account to get started.</div>
             </div>
 
-            <!-- Login Card -->
-            <div class="login-card">
+            <!-- Signup Card -->
+            <div class="signup-card">
                 <div id="message" class="message"></div>
 
-                <form id="loginForm">
+                <form id="signupForm">
                     <!-- Email Field -->
                     <div class="form-group">
                         <label class="form-label">EMAIL</label>
@@ -403,12 +382,40 @@
                             <input 
                                 type="email" 
                                 id="emailInput" 
-                                placeholder="Enter your email" 
+                                placeholder="Enter your Gmail address" 
                                 required
                                 autocomplete="email"
                             >
                         </div>
                         <div id="emailError" class="error-text"></div>
+                    </div>
+
+                    <!-- User Type Field -->
+                    <div class="form-group">
+                        <label class="form-label">USER TYPE</label>
+                        <div class="form-input-wrapper">
+                            <select id="userTypeInput" required>
+                                <option value="">Select user type</option>
+                                <option value="student">Student</option>
+                                <option value="teacher">Teacher</option>
+                            </select>
+                        </div>
+                        <div id="userTypeError" class="error-text"></div>
+                    </div>
+
+                    <!-- Username Field -->
+                    <div class="form-group">
+                        <label class="form-label">USERNAME</label>
+                        <div class="form-input-wrapper">
+                            <input 
+                                type="text" 
+                                id="usernameInput" 
+                                placeholder="Create a username" 
+                                required
+                                autocomplete="username"
+                            >
+                        </div>
+                        <div id="usernameError" class="error-text"></div>
                     </div>
 
                     <!-- Password Field -->
@@ -418,9 +425,9 @@
                             <input 
                                 type="password" 
                                 id="passwordInput" 
-                                placeholder="Enter your password" 
+                                placeholder="Create a password" 
                                 required
-                                autocomplete="current-password"
+                                autocomplete="new-password"
                             >
                             <button type="button" class="eye-icon" id="togglePasswordBtn" title="Toggle password visibility">
                                 <svg id="eyeShowIcon" viewBox="0 0 24 24">
@@ -436,26 +443,49 @@
                         <div id="passwordError" class="error-text"></div>
                     </div>
 
-                    <!-- Remember Me -->
-                    <div class="remember-section">
-                        <label class="remember-left">
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="rememberMe" autocomplete="off">
-                                <div class="checkbox-custom"></div>
-                            </div>
-                            <span class="remember-text">Remember me</span>
-                        </label>
-                        <a href="#" class="forgot-password" id="forgotPasswordLink">Forgot Password?</a>
+                    <!-- Confirm Password Field -->
+                    <div class="form-group">
+                        <label class="form-label">CONFIRM PASSWORD</label>
+                        <div class="form-input-wrapper">
+                            <input 
+                                type="password" 
+                                id="confirmPasswordInput" 
+                                placeholder="Confirm your password" 
+                                required
+                                autocomplete="new-password"
+                            >
+                            <button type="button" class="eye-icon" id="toggleConfirmPasswordBtn" title="Toggle password visibility">
+                                <svg id="eyeShowIcon2" viewBox="0 0 24 24">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                <svg id="eyeHideIcon2" viewBox="0 0 24 24" style="display: none;">
+                                    <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                                    <line x1="1" y1="1" x2="23" y2="23"></line>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="confirmPasswordError" class="error-text"></div>
                     </div>
 
-                    <!-- Login Button -->
-                    <button type="submit" class="login-button" id="loginButton">Login</button>
+                    <!-- Privacy Policy Checkbox -->
+                    <div class="checkbox-section">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="privacyCheckbox" required>
+                            <div class="checkbox-custom"></div>
+                        </div>
+                        <label class="checkbox-text">I agree to the Privacy Policy and Terms of Service</label>
+                    </div>
+                    <div id="privacyError" class="error-text"></div>
+
+                    <!-- Signup Button -->
+                    <button type="submit" class="signup-button" id="signupButton">Create Account</button>
                 </form>
             </div>
 
             <!-- Links Section -->
             <div class="links-section">
-                <a href="#" class="link" id="registerLink">New user? Register here</a>
+                <a href="#" class="link" id="loginLink">Already have an account? Login here</a>
             </div>
         </div>
     </div>
@@ -463,17 +493,24 @@
     <script>
         const API_BASE_URL = '/api/auth';
         
-        const loginForm = document.getElementById('loginForm');
+        const signupForm = document.getElementById('signupForm');
         const emailInput = document.getElementById('emailInput');
+        const userTypeInput = document.getElementById('userTypeInput');
+        const usernameInput = document.getElementById('usernameInput');
         const passwordInput = document.getElementById('passwordInput');
+        const confirmPasswordInput = document.getElementById('confirmPasswordInput');
         const togglePasswordBtn = document.getElementById('togglePasswordBtn');
-        const loginButton = document.getElementById('loginButton');
+        const toggleConfirmPasswordBtn = document.getElementById('toggleConfirmPasswordBtn');
+        const signupButton = document.getElementById('signupButton');
         const messageDiv = document.getElementById('message');
         const emailError = document.getElementById('emailError');
+        const userTypeError = document.getElementById('userTypeError');
+        const usernameError = document.getElementById('usernameError');
         const passwordError = document.getElementById('passwordError');
-        const rememberMe = document.getElementById('rememberMe');
-        const forgotPasswordLink = document.getElementById('forgotPasswordLink');
-        const registerLink = document.getElementById('registerLink');
+        const confirmPasswordError = document.getElementById('confirmPasswordError');
+        const privacyError = document.getElementById('privacyError');
+        const privacyCheckbox = document.getElementById('privacyCheckbox');
+        const loginLink = document.getElementById('loginLink');
 
         // Toggle password visibility
         togglePasswordBtn.addEventListener('click', function(e) {
@@ -492,28 +529,71 @@
             }
         });
 
+        // Toggle confirm password visibility
+        toggleConfirmPasswordBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const eyeShowIcon2 = document.getElementById('eyeShowIcon2');
+            const eyeHideIcon2 = document.getElementById('eyeHideIcon2');
+            
+            if (confirmPasswordInput.type === 'password') {
+                confirmPasswordInput.type = 'text';
+                eyeShowIcon2.style.display = 'block';
+                eyeHideIcon2.style.display = 'none';
+            } else {
+                confirmPasswordInput.type = 'password';
+                eyeShowIcon2.style.display = 'none';
+                eyeHideIcon2.style.display = 'block';
+            }
+        });
+
         // Clear error messages on input
-        emailInput.addEventListener('input', function() {
+        emailInput.addEventListener('input', () => {
             emailError.textContent = '';
             emailError.classList.remove('show');
             messageDiv.classList.remove('show');
         });
 
-        passwordInput.addEventListener('input', function() {
+        userTypeInput.addEventListener('change', () => {
+            userTypeError.textContent = '';
+            userTypeError.classList.remove('show');
+            messageDiv.classList.remove('show');
+        });
+
+        usernameInput.addEventListener('input', () => {
+            usernameError.textContent = '';
+            usernameError.classList.remove('show');
+            messageDiv.classList.remove('show');
+        });
+
+        passwordInput.addEventListener('input', () => {
             passwordError.textContent = '';
             passwordError.classList.remove('show');
             messageDiv.classList.remove('show');
         });
 
+        confirmPasswordInput.addEventListener('input', () => {
+            confirmPasswordError.textContent = '';
+            confirmPasswordError.classList.remove('show');
+            messageDiv.classList.remove('show');
+        });
+
         // Handle form submission
-        loginForm.addEventListener('submit', async function(e) {
+        signupForm.addEventListener('submit', async function(e) {
             e.preventDefault();
 
             // Clear previous errors
             emailError.textContent = '';
             emailError.classList.remove('show');
+            userTypeError.textContent = '';
+            userTypeError.classList.remove('show');
+            usernameError.textContent = '';
+            usernameError.classList.remove('show');
             passwordError.textContent = '';
             passwordError.classList.remove('show');
+            confirmPasswordError.textContent = '';
+            confirmPasswordError.classList.remove('show');
+            privacyError.textContent = '';
+            privacyError.classList.remove('show');
             messageDiv.classList.remove('show', 'success', 'error');
 
             // Validate inputs
@@ -529,6 +609,22 @@
                 isValid = false;
             }
 
+            if (!userTypeInput.value) {
+                userTypeError.textContent = 'Please select a user type';
+                userTypeError.classList.add('show');
+                isValid = false;
+            }
+
+            if (!usernameInput.value.trim()) {
+                usernameError.textContent = 'Username is required';
+                usernameError.classList.add('show');
+                isValid = false;
+            } else if (usernameInput.value.length < 3) {
+                usernameError.textContent = 'Username must be at least 3 characters';
+                usernameError.classList.add('show');
+                isValid = false;
+            }
+
             if (!passwordInput.value.trim()) {
                 passwordError.textContent = 'Password is required';
                 passwordError.classList.add('show');
@@ -539,62 +635,67 @@
                 isValid = false;
             }
 
+            if (!confirmPasswordInput.value.trim()) {
+                confirmPasswordError.textContent = 'Please confirm your password';
+                confirmPasswordError.classList.add('show');
+                isValid = false;
+            } else if (passwordInput.value !== confirmPasswordInput.value) {
+                confirmPasswordError.textContent = 'Passwords do not match';
+                confirmPasswordError.classList.add('show');
+                isValid = false;
+            }
+
+            if (!privacyCheckbox.checked) {
+                privacyError.textContent = 'You must agree to the Privacy Policy';
+                privacyError.classList.add('show');
+                isValid = false;
+            }
+
             if (!isValid) {
                 return;
             }
 
             // Disable button and show loading
-            loginButton.disabled = true;
-            const originalText = loginButton.textContent;
-            loginButton.innerHTML = '<span class="loading"></span>';
+            signupButton.disabled = true;
+            const originalText = signupButton.textContent;
+            signupButton.innerHTML = '<span class="loading"></span>';
 
             try {
-                const response = await fetch(`${API_BASE_URL}/login`, {
+                const response = await fetch(`${API_BASE_URL}/register`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
                         email: emailInput.value,
-                        password: passwordInput.value
+                        username: usernameInput.value,
+                        password: passwordInput.value,
+                        userType: userTypeInput.value
                     })
                 });
 
                 const data = await response.json();
 
                 if (response.ok && data.success) {
-                    // Store token
-                    localStorage.setItem('token', data.token);
-                    localStorage.setItem('user', JSON.stringify(data.user));
-
-                    // Store remember me preference
-                    if (rememberMe.checked) {
-                        localStorage.setItem('rememberedEmail', emailInput.value);
-                        localStorage.setItem('rememberMe', 'true');
-                    } else {
-                        localStorage.removeItem('rememberedEmail');
-                        localStorage.removeItem('rememberMe');
-                    }
-
                     // Show success message
-                    showMessage('Login successful! Redirecting...', 'success');
+                    showMessage('Account created successfully! Redirecting to login...', 'success');
 
-                    // Simulate redirect after delay
+                    // Redirect to login after delay
                     setTimeout(() => {
-                        window.location.href = '/dashboard';
+                        window.location.href = '/';
                     }, 1500);
 
                 } else {
-                    showMessage(data.message || 'Login failed. Please try again.', 'error');
+                    showMessage(data.message || 'Registration failed. Please try again.', 'error');
                 }
 
             } catch (error) {
-                console.error('Login error:', error);
+                console.error('Signup error:', error);
                 showMessage('An error occurred. Please try again.', 'error');
             } finally {
                 // Re-enable button
-                loginButton.disabled = false;
-                loginButton.textContent = originalText;
+                signupButton.disabled = false;
+                signupButton.textContent = originalText;
             }
         });
 
@@ -610,33 +711,23 @@
             messageDiv.className = `message show ${type}`;
         }
 
-        // Handle forgot password
-        forgotPasswordLink.addEventListener('click', function(e) {
+        // Handle login link
+        loginLink.addEventListener('click', function(e) {
             e.preventDefault();
-            showMessage('Forgot password functionality coming soon!', 'error');
+            window.location.href = '/';
         });
 
-        // Handle register link
-        registerLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.location.href = '/signup';
-        });
-
-        // Load remembered email on page load
+        // Initialize password icons on page load
         window.addEventListener('load', function() {
-            // Initialize password visibility icons
             const eyeShowIcon = document.getElementById('eyeShowIcon');
             const eyeHideIcon = document.getElementById('eyeHideIcon');
+            const eyeShowIcon2 = document.getElementById('eyeShowIcon2');
+            const eyeHideIcon2 = document.getElementById('eyeHideIcon2');
+            
             eyeShowIcon.style.display = 'none';
             eyeHideIcon.style.display = 'block';
-            
-            if (localStorage.getItem('rememberMe') === 'true') {
-                const rememberedEmail = localStorage.getItem('rememberedEmail');
-                if (rememberedEmail) {
-                    emailInput.value = rememberedEmail;
-                    rememberMe.checked = true;
-                }
-            }
+            eyeShowIcon2.style.display = 'none';
+            eyeHideIcon2.style.display = 'block';
         });
     </script>
 </body>

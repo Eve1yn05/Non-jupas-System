@@ -27,6 +27,10 @@ app.get('/', (req, res) => {
   res.render('login');
 });
 
+app.get('/signup', (req, res) => {
+  res.render('signup');
+});
+
 app.use('/api/auth', authRoutes);
 
 // Health check
