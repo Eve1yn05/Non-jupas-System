@@ -1,5 +1,5 @@
 {
-  "version": "2.7",
+  "version": "2.8",
   "children": [
     {
       "type": "frame",
@@ -65,7 +65,8 @@
                   "fill": "#666666",
                   "content": " (same as HKID or travel document)",
                   "fontFamily": "Inter",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -128,7 +129,8 @@
                   "fill": "#666666",
                   "content": " (same as HKID or travel document)",
                   "fontFamily": "Inter",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -1490,7 +1492,8 @@
                       "fill": "#666666",
                       "content": " (same as HKID or travel document)",
                       "fontFamily": "Inter",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -1553,7 +1556,8 @@
                       "fill": "#666666",
                       "content": " (same as HKID or travel document)",
                       "fontFamily": "Inter",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -2572,7 +2576,7 @@
                   "id": "yEmme",
                   "name": "additionalInfoLabel",
                   "fill": "#000000",
-                  "content": "Additional Information (Please describe if you have taken a gap year and why)",
+                  "content": "Personal Statement",
                   "fontFamily": "Inter",
                   "fontSize": 12,
                   "fontWeight": "600"
